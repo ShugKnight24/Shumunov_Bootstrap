@@ -1,0 +1,53 @@
+.jumbotron {
+    padding-top: 32px;
+}
+
+.jumbotron-header {
+    margin-bottom: 15px;
+}
+
+.jumbo-image {
+    border-radius: 10px;
+}
+
+.take-popplers {
+    width: 500px;
+}
+
+@media (max-width: 1199px) {
+
+    .fry-sex {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .fry-sex,
+    .take-popplers {
+        width: 95%;
+    }
+
+}
+
+.blog-card {
+    color: white;
+}
+
+.metal-ass {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.money-buttons {
+    width: 100%;
+}
+
+.payment {
+    margin-top: 10px;
+}
+
+.hide-payment {
+    display: none;
+}

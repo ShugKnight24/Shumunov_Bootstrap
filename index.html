@@ -3,64 +3,132 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Futurama Freaks Fansite</title>
-		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="/css/styles.css">
 	</head>
 	<body>
-		<div class="container">
-			<ul class="nav nav-pills navbar">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-			<div class="jumbotron">
-				<h1>Futurama Freaks!</h1>
-				 <div class="row">
-					<div class="col-md-6">
-						<p>Hello Fellow Futurama Freaks! This is the premier fansite to satisfy all of your Futurama needs! See what Fry has to say.</p>
-						<img src="fry sex.jpg" class="img-responsive">
+		<div class="container-fluid">
+			<!-- Navbar -->
+			<nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
+				<div class="container">
+					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<a class="navbar-brand" href="#">Futurama Freaks</a>
+
+					<div class="collapse navbar-collapse" id="main-nav">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Wiki</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Gallery</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">About</a>
+							</li>
+						</ul>
+						<form class="form-inline">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search">
+							<button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+						</form>
 					</div>
-					<div class="col-md-6">
-						<p>You heard the man! We're great. We're like sex, but even <strong><em>you</em></strong> can experience the magic. Don't be scared, 
-						follow Fry and Bender's lead and dig in!</p>
-						<img src="take popplers.png" class="img-responsive">
+				</div>
+			</nav>
+			<!-- Jumbotron -->
+			<div class="jumbotron jumbotron-fluid bg-inverse text-white text-center">
+				<div class="container">
+					<h1 class="display-1 jumbotron-header">Futurama Freaks!</h1>
+					 <div class="row">
+						<div class="col-sm">
+							<p>Hello fellow <span class="text-info" data-toggle="tooltip" title="You're not really a freak... Even if you are, we welcome everyone.">freak</span>! This is the fansite to satisfy all of your Futurama needs! See what Fry has to say.</p>
+							<img class="jumbo-image fry-sex" src="img/fry_sex.jpg">
+						</div>
+						<div class="col-sm">
+							<p>You heard the man! We're great. Best of all, even <strong><em>you</em></strong> can experience the magic. Don't be scared, follow Fry and Bender's lead and dig in!</p>
+							<img class="jumbo-image take-popplers" src="img/take_popplers.png">
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="jumbotron">
-						<p>Click on the button below to see some of your favorite scenes</p>
-						<button class="btn btn-info">View Images!</button>
+			<!-- Cards -->
+			<div class="container">
+				<div class="row">
+					<div class="card-group">
+						<div class="card">
+							<img class="card-image-top img-fluid" src="img/bullseye_dominoes_checkmate.jpg" alt="Checkmate!">
+							<div class="card-block">
+								<h3 class="card-title text-center">Gallery</h3>
+								<p>Relive some of your favorite memories by looking through our gallery.</p>
+								<a class="btn btn-primary btn-block" href="#">View Images!</a>
+							</div>
+						</div>
+						<div class="card bg-inverse">
+							<img class="card-image-top img-fluid" src="img/blog.jpg" alt="blog!">
+							<div class="card-block blog-card">
+								<h3 class="card-title text-center">Blog</h3>
+								<p>Gain deep insight into references, symbols, and nuanced story threads you may not have picked up on. We break down all the fascinating theories you may not have been aware of.</p>
+								<a class="btn btn-primary btn-block" href="#">Blog It Up!</a>
+							</div>
+						</div>
+						<div class="card bg-info">
+							<div class="card-block">
+								<p>We are a fan run website, please consider donating to pay for our server and hosting costs.</p>
+								<p>"If you don't donate to the Futurama Freaks, you can bite my shiny metal ass"</p>
+								<img class="metal-ass" src="img/bender_ass.jpg">
+								<p>We would tremendously appreciate any donations, but it is by no means required. Thank you for your genorosity.</p>
+							</div>
+							<div class="btn-group">
+								<button type="button" class="btn btn-primary money-buttons">Dollar</button>
+								<button type="button" class="btn btn-primary money-buttons">Euro</button>
+								<button type="button" class="btn btn-primary money-buttons">Pound</button>
+							</div>
+							<img id="payment" class="card-image-bottom img-fluid hide-payment" src="img/shut_up_and_take_my_money.jpg" alt="Shut up and take my money!">
+						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="alert alert-success" role="alert">You have successfully become a freak, congrats!</div>
-					<div class="alert alert-info" role="alert">This is an information message</div>
-					<div class="alert alert-danger" role="alert">Our apologies, an error has occuring</div>
-					<div class="alert alert-warning" role="alert">Naughty, Naughty fellow freak. This is a warning</div>
+			</div>
+			<!-- Tabs -->
+			<h3 class="text-center py-4 my-4">Fun with BootStrap4 Tabs</h3>
+			<nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+				<a class="nav-link active" href="#active" data-toggle="tab">Success</a>
+				<a class="nav-link" href="#info" data-toggle="tab">Info</a>
+				<a class="nav-link" href="#danger" data-toggle="tab">Danger</a>
+				<a class="nav-link" href="#warning" data-toggle="tab">Warning</a>
+			</nav>
+
+			<div class="tab-content">
+				<div id="active" class="alert alert-success tab-pane text-center active" role="alert">
+					<p>You have successfully become a freak, congrats!</p>
 				</div>
-				<div class="col-md-4">
-				<p>We are a fan run website, please consider donating to pay for server costs.</p>
-				<img src="bender ass.jpg">
-				<p> Bender says: "If you don't donate to the Futurama Freaks, you can bite my shiny metal ass"</p>
-				<p>Bender! Don't insult our users! We would tremendously appreciate any donations, but it is by no means required. Thank you for your genorosity.</p>
-					<div class="btn-group">
-						<button type="button" class="btn btn-default btn-lg">
-							<span class="glyphicon glyphicon-usd"></span> Dollar
-						</button>
-						<button type="button" class="btn btn-default btn-lg">
-							<span class="glyphicon glyphicon-euro"></span> Euro
-						</button>
-						<button type="button" class="btn btn-default btn-lg">
-							<span class="glyphicon glyphicon-gbp"></span> Pound
-						</button>
-					</div>
+				<div id="info" class="alert alert-info tab-pane text-center" role="alert">
+					<p>This is an informational message</p>
+				</div>
+				<div id="danger" class="alert alert-danger tab-pane text-center" role="alert">
+					<p>Our apologies, an error has occurred</p>
+				</div>
+				<div id="warning" class="alert alert-warning tab-pane text-center" role="alert">
+					<p>Naughty, Naughty fellow freak. This is a warning</p>
 				</div>
 			</div>
 		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js></script>
+		<!-- Jquery -->
+		<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+		<!-- Tether -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<!-- Bootstrap's JS -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<!-- My Scripts -->
+		<script src="js/script.js" charset="utf-8"></script>
 	<body>
 </html>

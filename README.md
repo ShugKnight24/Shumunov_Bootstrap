@@ -1,9 +1,8 @@
-# Shumunov_Bootstrap
+# Bootstrap4
 
-Hello, this is my first attempt at learning Bootstrap 3. I decided to make a fan website to one of my favorite shows, Futurama. 
+I originally created this project as pre-work for the front-end bootcamp at Grand Circus Detroit. I am currently using it to learn bootstrap 4.
 
-As always, let me know if you spot any errors, or have any recommendations.
+As always, let me know if you spot any errors, or have any recommendations. I would really appreciate it.
 
-I would really appreciate it.
-
-Thanks!
+### To-Do List
+[ ]
